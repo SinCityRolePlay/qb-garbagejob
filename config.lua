@@ -11,6 +11,12 @@ Config.GiveCryptoStick = true
 -- Has to roll this number or higher to receive a cryptostick
 Config.CryptoStickChance = 75
 
+-- Want to give out a cryptostick per stop?
+Config.GreenUSB = true 
+
+-- Has to roll this number or higher to receive a cryptostick
+Config.GreenUSBChance = 90 
+
 -- How many stops minimum should the job roll?
 Config.MinStops = 5
 

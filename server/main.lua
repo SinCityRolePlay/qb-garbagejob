@@ -58,8 +58,14 @@ QBCore.Functions.CreateCallback("garbagejob:server:NextStop", function(source, c
         Player.Functions.AddItem("cryptostick", 1, false)
         TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["cryptostick"], 'add')
         TriggerClientEvent('QBCore:Notify', source, Lang:t("info.found_crypto"))
-
     end
+
+    if(math.random(100) >= Config.GreenUSBChance) and Config.GreenUSB then
+        Player.Functions.AddItem("usb_green", 1, false)
+        TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["usb_green"], 'add')
+        TriggerClientEvent('QBCore:Notify', source, Lang:t("info.found_usb"))
+    end
+
 
     if distance <= 20 then
         if currentStopNum >= #Routes[CitizenId].stops then

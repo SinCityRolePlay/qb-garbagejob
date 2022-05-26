@@ -31,6 +31,7 @@ local Translations = {
         ["garbage_in_truck"] = "Put the bag in your truck..",
         ["stand_here"] = "Stand here..",
         ["found_crypto"] = "You found a cryptostick on the floor",
+        ["found_usb"] = "You found a green usb on the floor",
         ["payout_deposit"] = "(+ $%{value} deposit)",
         ["store_truck"] =  "[E] - Store Garbage Truck",
         ["get_truck"] =  "[E] - Garbage Truck",
