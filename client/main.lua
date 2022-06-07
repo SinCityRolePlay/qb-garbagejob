@@ -26,11 +26,11 @@ local function setupClient()
     currentStopNum = 0
     if playerJob.name == "garbage" then
         garbageBlip = AddBlipForCoord(Config.Locations["main"].coords.x, Config.Locations["main"].coords.y, Config.Locations["main"].coords.z)
-        SetBlipSprite(garbageBlip, 318)
+        SetBlipSprite(garbageBlip, 498)
         SetBlipDisplay(garbageBlip, 4)
         SetBlipScale(garbageBlip, 1.0)
         SetBlipAsShortRange(garbageBlip, true)
-        SetBlipColour(garbageBlip, 39)
+        SetBlipColour(garbageBlip, 75)
         BeginTextCommandSetBlipName("STRING")
         AddTextComponentSubstringPlayerName(Config.Locations["main"].label)
         EndTextCommandSetBlipName(garbageBlip)
